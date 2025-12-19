@@ -45,6 +45,9 @@
 
 .grid-main-heading{
     margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 10rem;
+
 }
 
 .top3-content {
@@ -82,12 +85,14 @@
 }
 
 .gallery {
-  margin-top: 7.1rem;
+  margin-top: 7.1rem, auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(36rem, 2fr));
   gap: var(--gap);
   padding: 4rem;
   min-height: 100vh;
+  justify-items: center;
+  align-items: center;
 }
 
 .gallery img {
@@ -107,4 +112,9 @@
 
 .gallery-effect img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
 }
