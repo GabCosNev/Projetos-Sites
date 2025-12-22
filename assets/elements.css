@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -49,7 +50,7 @@ h4 {
 }
 
 table {
-    min-width: 60rem;
+    min-width: 100rem;
     min-height: 36rem;
     border-collapse: collapse;
 }

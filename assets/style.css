@@ -8,6 +8,16 @@
     z-index: -1;
 }
 
+.main-bg2 {
+    background-image: url(img/main-bg2.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--white-color);
+    z-index: -1;
+}
+
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
@@ -33,7 +43,7 @@
     height: auto;
 }
 
-.intro-content-two{
+.intro-content-two {
     max-width: 64rem;
     display: flex;
     flex-flow: column wrap;
@@ -43,7 +53,7 @@
     padding: 8rem;
 }
 
-.grid-main-heading{
+.grid-main-heading {
     margin-bottom: 1rem;
     text-align: center;
     margin-top: 10rem;
@@ -85,36 +95,110 @@
 }
 
 .gallery {
-  margin-top: 7.1rem, auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 2fr));
-  gap: var(--gap);
-  padding: 4rem;
-  min-height: 100vh;
-  justify-items: center;
-  align-items: center;
+    margin-top: 7.1rem, auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 2fr));
+    gap: var(--gap);
+    padding: 4rem;
+    min-height: 100vh;
+    justify-items: center;
+    align-items: center;
 }
 
 .gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .img-360 {
-  aspect-ratio: 360 / 360;
-  object-fit: cover;
+    aspect-ratio: 360 / 360;
+    object-fit: cover;
 }
 
-.gallery-effect img{
+.gallery-effect img {
     transition: all 300ms ease-in-out;
 }
 
-.gallery-effect img:hover{
+.gallery-effect img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
 .responsive-table {
     width: 100%;
     overflow-x: auto;
+}
+
+.intro-img2 img {
+    max-width: 100%;
+    height: auto;
+    margin: 5rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+    max-width: 200rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-grid {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(3) {
+    grid-column: span 2;
+}
+
+.form-group:nth-child(4) {
+    grid-column: span 2;
+}
+
+.form-group input,
+.form-group textarea {
+    min-height: 5rem;
+    font-size: 2rem;
+    border: 0.1rem solid transparent;
+    outline: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.form-group:nth-child(5) {
+    grid-column: 2;
+    justify-self: end;
+}
+
+.form-group button {
+    width: auto;
+    background: none;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid var(--white-color);
+    color: var(--white-color);
+    min-height: 5rem;
+}
+
+.form-group button:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    cursor: pointer;
+
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    box-shadow: 0 0 1rem 0.2rem var(--white-color);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 1.5rem var(--white-color);
 }
