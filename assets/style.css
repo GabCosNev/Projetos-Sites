@@ -53,6 +53,10 @@
     padding: 8rem;
 }
 
+.intro-text-content {
+    margin-top: 7.1rem;
+}
+
 .grid-main-heading {
     margin-bottom: 1rem;
     text-align: center;
@@ -79,20 +83,11 @@
 
 .top3-grid h3 {
     font-size: 3rem;
-    position: relative;
+    margin: 1rem;
 
 }
 
-.top3-grid h3::before {
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    top: -10rem;
-    left: 0;
-    font-size: 8rem;
-    font-style: italic;
-    transform: rotate(7deg);
-}
+
 
 .gallery {
     margin-top: 7.1rem, auto;
@@ -138,7 +133,8 @@
 .contact-form {
     grid-column: span 2;
     max-width: 200rem;
-    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     width: 100%;
 }
 
@@ -201,4 +197,11 @@
 .form-group input:focus,
 .form-group textarea:focus {
     box-shadow: 0 0 1.5rem var(--white-color);
+}
+
+@media (max-width: 80rem){
+    .intro-content, .top3-grid{
+        grid-template-columns: 1fr;
+    }
+
 }
